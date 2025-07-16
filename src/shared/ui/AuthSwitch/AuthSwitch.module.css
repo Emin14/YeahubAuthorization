@@ -1,0 +1,8 @@
+.registerLink {
+  color: var(--base-text);
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 24px;
+  background-color: var(--accent-background);
+  border-radius: 20px;
+}

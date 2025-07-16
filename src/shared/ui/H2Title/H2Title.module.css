@@ -1,0 +1,6 @@
+.H2Title {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--base-text);
+  line-height: 1;
+}

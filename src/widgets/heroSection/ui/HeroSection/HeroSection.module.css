@@ -1,0 +1,45 @@
+.heroSection {
+  background-color: var(--brand-book);
+  color: var(--text-brand-book);
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 10px;
+}
+
+.logoWrapper {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.benefits {
+  margin-top: auto;
+  width: 340px;
+}
+
+.benefitsTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    display: none;
+  }
+}

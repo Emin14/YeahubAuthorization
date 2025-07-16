@@ -1,0 +1,49 @@
+.wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #5f5f5fb2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailSentNotification {
+  width: 410px;
+  max-width: 410px;
+  background-color: #ffffff;
+  color: #222222;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.img {
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.info {
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: white;
+  color: var(--brand-book);
+}
+
+@media (max-width: 576px) {
+  .emailSentNotification {
+    width: 100%;
+  }
+
+  .wrapper {
+    padding: 0 16px;
+  }
+}

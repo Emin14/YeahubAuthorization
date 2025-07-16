@@ -1,0 +1,21 @@
+.logoutButton {
+  width: 100%;
+  background-color: inherit;
+  border: 1px solid #f3164e;
+  color: #f3164e;
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.logoutButton:hover {
+  background-color: inherit;
+  color: #dd7d95;
+}
+
+.responseError {
+  color: rgb(225 23 23);
+  font-size: 15px;
+  font-weight: 600;
+}

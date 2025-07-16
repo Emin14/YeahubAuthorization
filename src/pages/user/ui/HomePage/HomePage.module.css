@@ -1,0 +1,45 @@
+.homePage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  color: var(--brand-book);
+}
+
+.user {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.leftBlock {
+  width: 280px;
+  padding: 20px;
+}
+
+.rightBlock {
+  width: 100%;
+  margin-top: 90px;
+}
+
+.logo {
+  margin-bottom: 70px;
+}
+
+.supportBtn {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
