@@ -1,3 +1,12 @@
-export { Button } from "../ui/Button/Button";
-export { H2Title } from "../ui/H2Title/H2Title";
-export { Label } from "../ui/Label/Label";
+export { default as AuthSwitch } from "../ui/AuthSwitch/AuthSwitch";
+export { default as Button } from "../ui/Button/Button";
+export { default as EmailSentNotification } from "../ui/EmailSentNotification/EmailSentNotification";
+export { default as Footer } from "../ui/Footer/Footer";
+export { default as H2Title } from "../ui/H2Title/H2Title";
+export { default as Header } from "../ui/Header/Header";
+export { default as Label } from "../ui/Label/Label";
+export { default as LinkIcon } from "../ui/LinkIcon/LinkIcon";
+export { default as Logo } from "./Logo/Logo";
+export { default as PasswordLabel } from "./PasswordLabel/PasswordLabel";
+export { default as Spinner } from "./Spinner/Spinner";
+export { default as UserAvatar } from "./UserAvatar/UserAvatar";

@@ -2,15 +2,12 @@ import { Link } from "react-router";
 import styles from "./AuthSwitch.module.css";
 
 type AuthSwitchProps = {
-  registrationOrLogin: string;
-  className: string;
+  mode: "register" | "login";
+  className?: string;
 };
 
-export default function AuthSwitch({
-  registrationOrLogin,
-  className,
-}: AuthSwitchProps) {
-  if (registrationOrLogin === "registration") {
+export default function AuthSwitch({ mode, className }: AuthSwitchProps) {
+  if (mode === "register") {
     return (
       <div className={`${styles.registerLink} ${className}`}>
         <span>Нет аккаунта?</span>

@@ -11,7 +11,6 @@ export type RegistrationRequest = {
   lastName: string;
   email: string;
   phone: string;
-  confirmPassword: string;
 };
 
 export type User = {

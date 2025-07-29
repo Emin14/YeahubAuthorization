@@ -4,10 +4,10 @@ import { RouterProvider } from "react-router";
 import { Provider } from "react-redux";
 import { router } from "../routing/index.tsx";
 import { store } from "../store.ts";
+import { Spinner } from "../../shared/ui";
 import "../styles/reset.css";
 import "../styles/base.css";
 import "../styles/variables.css";
-import Spinner from "../../shared/ui/Spinner/Spinner.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

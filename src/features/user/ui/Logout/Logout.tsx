@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import Cookies from "js-cookie";
-import { Button } from "../../../../shared";
-import { useLogoutMutation } from "../../api/logoutApi";
-import exit from "../../../../assets/exit.svg";
-import { getApiErrorMessage, type ApiError } from "../../model/types";
+import { useLogoutMutation } from "../../api";
+import { getApiErrorMessage, type ApiError } from "../../model";
+import { Button } from "../../../../shared/ui";
+import { exit } from "../../../../assets";
 import styles from "./Logout.module.css";
 
 type LogoutProps = {

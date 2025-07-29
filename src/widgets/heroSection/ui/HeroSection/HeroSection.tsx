@@ -1,15 +1,8 @@
-import Logo from "../../../../entities/ui/logo/Logo";
+import { Logo } from "../../../../shared/ui";
+import { benefits } from "../../model";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
-  const benefits = [
-    "Пошаговый план обучения",
-    "Карьерный рост",
-    "Большое сообщество специалистов",
-    "Обучение с ментором",
-    "Возможность прохождения стажировки",
-  ];
-
   return (
     <div className={styles.heroSection}>
       <div className={styles.logoWrapper}>

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import envelope from "../../../assets/envelope.svg";
+import { envelope } from "../../../assets";
 import styles from "./EmailSentNotification.module.css";
 
 type EmailSentNotificationProps = {
@@ -20,7 +20,7 @@ export default function EmailSentNotification({
 
   const resend = () => {
     clearInterval(ref.current);
-    setTimer(10);
+    setTimer(60);
     ref.current = setInterval(() => {
       setTimer((prev) => {
         if (prev <= 1) {

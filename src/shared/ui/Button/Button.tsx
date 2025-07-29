@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import styles from "./Button.module.css";
 
-type Props = {
+type ButtonProps = {
   type: "submit" | "reset" | "button" | undefined;
   children: ReactNode;
   className?: string;
@@ -9,13 +9,13 @@ type Props = {
   disabled?: boolean;
 };
 
-export function Button({
+export default function Button({
   type,
   children,
   className,
   onClick,
   disabled,
-}: Props) {
+}: ButtonProps) {
   return (
     <button
       type={type}

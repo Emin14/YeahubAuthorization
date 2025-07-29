@@ -1,31 +1,27 @@
-import { type ReactElement, type SVGProps } from "react";
+import type { UseFormRegisterReturn } from "react-hook-form";
 import styles from "./Label.module.css";
 
-type Props = {
+type LabelProps = {
   title: string;
   inputType: string;
   id: string;
   placeholder: string;
   autoComplete: string;
   className?: string;
-  children?: ReactElement<SVGProps<SVGSVGElement>>;
-  value: string;
-  onChange: (value: string) => void;
-  error: string;
+  error?: string;
+  register?: UseFormRegisterReturn;
 };
 
-export function Label({
+export default function Label({
   title,
   inputType,
   id,
   placeholder,
   autoComplete,
   className,
-  children,
-  value,
-  onChange,
   error,
-}: Props) {
+  ...rest
+}: LabelProps) {
   return (
     <label className={`${styles.label} ${className}`}>
       {title}
@@ -36,10 +32,8 @@ export function Label({
         className={`${styles.input} ${error ? styles.inputError : ""}`}
         placeholder={placeholder}
         autoComplete={autoComplete}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
+        {...rest}
       />
-      {children}
       {error && <p className={styles.error}>{error}</p>}
     </label>
   );

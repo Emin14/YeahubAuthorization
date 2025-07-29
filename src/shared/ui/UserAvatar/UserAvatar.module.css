@@ -1,0 +1,15 @@
+.userAvatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--brand-book);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.userLogo {
+  width: 100%;
+  object-fit: contain;
+}

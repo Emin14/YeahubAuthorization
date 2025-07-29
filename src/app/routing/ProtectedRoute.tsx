@@ -1,6 +1,6 @@
 import { Navigate, Outlet } from "react-router";
-import { useGetProfileQuery } from "../../pages/user/api/getProfile";
-import Spinner from "../../shared/ui/Spinner/Spinner";
+import { useGetProfileQuery } from "../../entities/user/api";
+import { Spinner } from "../../shared/ui";
 
 export function ProtectedRoute() {
   const { data, isLoading } = useGetProfileQuery();
